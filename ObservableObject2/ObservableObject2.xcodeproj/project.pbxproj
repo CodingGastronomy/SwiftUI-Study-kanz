@@ -12,6 +12,7 @@
 		B2F40EBA24E6E4D500F7AE8C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B2F40EB924E6E4D500F7AE8C /* Assets.xcassets */; };
 		B2F40EBD24E6E4D500F7AE8C /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B2F40EBC24E6E4D500F7AE8C /* Preview Assets.xcassets */; };
 		B2F40EC524E6E4E000F7AE8C /* UserSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2F40EC424E6E4E000F7AE8C /* UserSettings.swift */; };
+		B2F40EC724E6E9D700F7AE8C /* FancyScoreView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2F40EC624E6E9D700F7AE8C /* FancyScoreView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,7 @@
 		B2F40EBC24E6E4D500F7AE8C /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		B2F40EBE24E6E4D500F7AE8C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B2F40EC424E6E4E000F7AE8C /* UserSettings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserSettings.swift; sourceTree = "<group>"; };
+		B2F40EC624E6E9D700F7AE8C /* FancyScoreView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FancyScoreView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +58,7 @@
 			children = (
 				B2F40EB524E6E4D300F7AE8C /* ObservableObject2App.swift */,
 				B2F40EB724E6E4D300F7AE8C /* ContentView.swift */,
+				B2F40EC624E6E9D700F7AE8C /* FancyScoreView.swift */,
 				B2F40EC424E6E4E000F7AE8C /* UserSettings.swift */,
 				B2F40EB924E6E4D500F7AE8C /* Assets.xcassets */,
 				B2F40EBE24E6E4D500F7AE8C /* Info.plist */,
@@ -144,6 +147,7 @@
 				B2F40EB824E6E4D300F7AE8C /* ContentView.swift in Sources */,
 				B2F40EC524E6E4E000F7AE8C /* UserSettings.swift in Sources */,
 				B2F40EB624E6E4D300F7AE8C /* ObservableObject2App.swift in Sources */,
+				B2F40EC724E6E9D700F7AE8C /* FancyScoreView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

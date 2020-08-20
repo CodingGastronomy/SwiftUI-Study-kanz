@@ -10,11 +10,13 @@ import SwiftUI
 struct ContentView: View {
     @State private var isTapped: Bool = false
     @State private var cardDragState: CGSize = .zero
+    @State private var cardRotateState: Double = 0
     
     var body: some View {
         Card(isTapped: self.isTapped)
             .offset(y: self.cardDragState.height)
             .animation(.spring())
+            .rotationEffect(Angle(degrees: self.cardRotateState))
             .gesture(TapGesture(count: 1)
                         .onEnded({ _ in
                             print("Tapped")
@@ -22,7 +24,7 @@ struct ContentView: View {
                                 self.isTapped.toggle()
                             }
                         }))
-            
+    
             .gesture(DragGesture()
                         .onChanged({ value in
                             print(value.translation)
@@ -32,6 +34,11 @@ struct ContentView: View {
                             self.cardDragState = .zero
                         })
             )
+        
+            .gesture(RotationGesture()
+                        .onChanged({ angle in
+                            self.cardRotateState = angle.degrees
+                        }))
         
     }
 }

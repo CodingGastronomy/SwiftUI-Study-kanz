@@ -12,7 +12,7 @@ struct ContentView: View {
     @State private var cardDragState: CGSize = .zero
     
     var body: some View {
-        Card(isTapped: self.$isTapped)
+        Card(isTapped: self.isTapped)
             .offset(y: self.cardDragState.height)
             .animation(.spring())
             .gesture(TapGesture(count: 1)

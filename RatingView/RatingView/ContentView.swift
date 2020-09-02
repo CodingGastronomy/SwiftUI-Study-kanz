@@ -13,6 +13,8 @@ struct ContentView: View {
     
     var body: some View {
         VStack {
+            Image("coffee")
+                
             RatingView(rating: self.$rating)
             Text(rating != nil ? "You rating: \(self.rating!)" : "")
         }
